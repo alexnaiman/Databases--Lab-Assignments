@@ -1,0 +1,8 @@
+CREATE PROCEDURE up5
+AS
+BEGIN
+	ALTER TABLE Player
+	ADD CONSTRAINT Candidate_Constraint 
+	UNIQUE (playerName)
+END
+GO

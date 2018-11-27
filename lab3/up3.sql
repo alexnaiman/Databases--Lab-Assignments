@@ -1,0 +1,7 @@
+CREATE PROCEDURE up3
+AS
+BEGIN
+	ALTER TABLE Player_X_Character
+	ADD CONSTRAINT PK_Player_X_Character PRIMARY KEY(playerId,characterId)
+END
+GO

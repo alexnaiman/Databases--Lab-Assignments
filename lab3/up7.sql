@@ -1,0 +1,8 @@
+CREATE PROCEDURE up7
+AS
+BEGIN
+	ALTER TABLE PlayerStuff
+	ADD playerId INT CONSTRAINT playerIDFKK REFERENCES Player(playerId)
+END
+GO
+	

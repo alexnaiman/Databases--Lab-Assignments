@@ -1,0 +1,7 @@
+CREATE PROCEDURE down5
+AS
+BEGIN
+	ALTER TABLE Player
+	DROP CONSTRAINT Candidate_Constraint 
+END
+GO

@@ -1,0 +1,7 @@
+CREATE PROCEDURE down3
+AS
+BEGIN
+	ALTER TABLE Player_X_Character
+	DROP CONSTRAINT PK_Player_X_Character
+END
+GO

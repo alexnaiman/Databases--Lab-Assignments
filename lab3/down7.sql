@@ -1,0 +1,8 @@
+CREATE PROCEDURE down7
+AS
+BEGIN
+	ALTER TABLE PlayerStuff
+	DROP playerIDFKK
+END
+GO
+	
