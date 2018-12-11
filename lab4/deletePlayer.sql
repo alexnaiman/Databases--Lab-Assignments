@@ -1,13 +1,13 @@
 USE DnDPartyManager
 GO
 
-CREATE PROC deleteTable_Player
+CREATE OR ALTER PROC deletePlayer 
 @rows INT
 AS
 BEGIN
 	DECLARE @i INT
-	SET @i = 1
-	WHILE @i<=@rows
+	SET @i = 0
+	WHILE @i <= @rows
 	BEGIN
 		DELETE FROM Player
 		WHERE Player.playerId = @i
@@ -16,5 +16,5 @@ BEGIN
 END
 GO
 
-EXEC deleteTable_Player 3
+EXEC deletePlayer 10
 SELECT * FROM Player
